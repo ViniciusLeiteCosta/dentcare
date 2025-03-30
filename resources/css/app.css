@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do barra de navegação */
+.navbar {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin: 15px auto;
+    width: 95%;
+}
+
+/* Estilo de links */
+.navbar a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.botao-agendar {
+    background-color: #365b6d;
+    color: #ffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.botao-agendar:hover {
+    background-color: #41c1ba;
+    border: none;
+    cursor: pointer;
+}
+
+.botao-agendar::after {
+    background-color: #41c1ba;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Ajusta o espaçamento entre os elementos */
+    margin: 10px auto; /* Adiciona um pequeno espaçamento entre o container e o pai, além de centralizá-lo */
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: red; /* Define o texto como vermelho */
+}
+
+.navbar-customizada{
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: #E6F6FE;
+}
+
+/* Estilo do carrossel */
+#carousel-custom .carousel-inner {
+    border-radius: 10px;
+    width: 96%; /* Reduz a largura do carrossel para 80% */
+    height: 600px; /* Define uma altura fixa para o carrossel */
+    margin: 0 auto; /* Centraliza o carrossel na página */
+}
+
+#carousel-custom .carousel-inner img {
+    border-radius: 10px;
+    filter: brightness(70%); /* Reduz o brilho para 70% */
+    width: 90%;  /* Garante que a largura da imagem ocupe 100% da largura do container */
+    height: 600px;  /* Define uma altura fixa para todas as imagens */
+    object-fit: cover;  /* Ajusta a imagem para cobrir o tamanho do container sem distorcer */
+}
+
+.texto-sobre-imagem {
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para o centro exato */
+    color: rgba(255, 255, 255, 0.852); /* Define a cor do texto */
+    font-size: 45px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adiciona contorno ao texto */
+}
