@@ -1,9 +1,6 @@
 # Dent Care
 
 <p align="center">
-
-
-    
   <img src="https://github.com/user-attachments/assets/5b2a37e7-83f0-42eb-ae66-e150e5a6475f" width="400" alt="Dent Care Logo">
 </p>
 
@@ -27,22 +24,42 @@ O **Dent Care** tem como objetivo facilitar o acesso a profissionais da odontolo
 - **Blade**: Motor de templates do Laravel para criar interfaces dinâmicas.
 - **Bootstrap**: Para estilização responsiva e moderna.
 
-## Aprendizados e Desafios
+## Como Rodar o Projeto
 
-Sendo um projeto solo e minha primeira experiência com Laravel, alguns dos maiores desafios envolvem:
+Para rodar o projeto localmente, siga os passos abaixo:
 
-- Compreender a estrutura MVC do Laravel e aplicá-la corretamente.
-- Implementar um sistema de usuários e dentistas.
-- Garantir um design responsivo e acessível em todos os dispositivos.
-- Otimizar a performance do site para uma melhor experiência do usuário.
+# Como Rodar o Projeto
 
-## Contribuições
+Para rodar o projeto localmente, siga os passos abaixo:
 
-Atualmente, este é um projeto pessoal, mas estou aberto a feedbacks e sugestões para melhorias. Caso tenha alguma ideia ou queira colaborar de alguma forma, sinta-se à vontade para entrar em contato!
+```bash
+# 1. Clone o repositório
+git clone <URL_DO_REPOSITORIO>
 
----
+# 2. Navegue até o diretório do projeto
+cd <DIRETORIO_DO_PROJETO>
 
-**Desenvolvido por:** Vinicius Leite Costa
+# 3. Instale as dependências do PHP
+composer install
 
----
+# 4. Instale as dependências do front-end
+npm install
 
+# 5. Inicie o servidor Laravel
+php artisan serve
+
+# 9. Em outro terminal, inicie o front-end com live reload
+npm run dev
+
+# 10. Entre no link do servidor gerado pelo comando:
+php artisan serve
+
+Deve aparecer algo semelhante a isto no seu terminal:
+
+----------------------------------------------------
+C:\dentcare> php artisan serve
+
+   INFO  Server running on [http://127.0.0.1:8000].  
+
+  Press Ctrl+C to stop the server
+----------------------------------------------------
