@@ -41,13 +41,31 @@ composer install
 # 4. Instale as dependências do front-end
 npm install
 
-# 5. Inicie o servidor Laravel
-php artisan serve
+# 5. Crie o '.env' com as informações que o servidor precisa
 
-# 9. Em outro terminal, inicie o front-end com live reload
+    Obs: para que tudo funcione corretamente você precisa gerar um arquivo '.env',
+    este arquivo é importante para que o projeto funcione.
+
+    Se o '.env' não for configurado corretamente, o Laravel pode não funcionar,
+    especialmente se faltar a chave de aplicação (APP_KEY).
+    
+    Como o '.env' é um arquivo sensível e não pode ser commitado,
+    serão necessários alguns passos:
+    
+    1) Copie o arquivo .env.example para um novo arquivo '.env':
+
+        cp .env.example .env <-- Cole isso no terminal para criar o '.env' necessário para a aplicação funcionar.
+
+        Assim que criar, abra o '.env', e remova a '#' antes de APP_KEY, pois a API está comentada.
+        Isso é necessário, caso contrário na hora de abrir a página não vai funcionar.
+
+    2) Gere a chave de aplicação no Laravel:
+    php artisan key:generate
+
+# 6. Em outro terminal, inicie o front-end com live reload
 npm run dev
 
-# 10. Entre no link do servidor gerado pelo comando:
+# 7. Entre no link do servidor gerado pelo comando:
 php artisan serve
 
 Deve aparecer algo semelhante a isto no seu terminal:
@@ -55,7 +73,15 @@ Deve aparecer algo semelhante a isto no seu terminal:
 ----------------------------------------------------
 C:\dentcare> php artisan serve
 
-   INFO  Server running on [http://127.0.0.1:8000].  
+   INFO  Server running on [http://127.0.0.1:8000]. <-- Segure CTRL e clique com o mouse para abrir o link no navegador 
 
   Press Ctrl+C to stop the server
 ----------------------------------------------------
+
+Notas adicionais:
+
+Caso o 'npm run dev' não funcione por algum motivo, você pode tentar rodar 'npm run build' para compilar os assets.
+
+Certifique-se de que tem o Node.js e o npm corretamente instalados.
+
+Se a pessoa não tiver o PHP, Composer ou Node.js instalados corretamente, o processo de instalação pode falhar.
