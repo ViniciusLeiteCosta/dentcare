@@ -30,10 +30,10 @@ Para rodar o projeto localmente, siga os passos abaixo:
 
 ```bash
 # 1. Clone o repositório
-git clone <URL_DO_REPOSITORIO>
+git clone https://github.com/ViniciusLeiteCosta/dentcare.git
 
 # 2. Navegue até o diretório do projeto
-cd <DIRETORIO_DO_PROJETO>
+cd <diretorio_do_projeto>
 
 # 3. Instale as dependências do PHP
 composer install
