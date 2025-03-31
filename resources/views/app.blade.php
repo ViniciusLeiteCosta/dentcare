@@ -36,7 +36,9 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light navbar-customizada">
             <a class="navbar-brand" href="#home">
-                <img src="{{ asset('images/logo.png') }}" alt="Dent Care Logo" style="height: 150px;">
+                <a href="{{ url('/') }}">
+                    <img src="{{ asset('images/logo.png') }}" alt="Dent Care Logo" style="height: 150px;">
+                </a>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -97,7 +99,7 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section 1 -->
     <section id="about">
         <div class="container">
             <div class="row d-flex align-items-center">
@@ -117,7 +119,7 @@
         </div>
     </section>
 
-    <!-- Cards Section -->
+    <!-- Cards Section 1 -->
     <section>
         <div class="cards d-flex justify-content-center container-cards">
             <div class="col">
@@ -175,7 +177,7 @@
         </div>
     </section>
 
-    <!-- Cards Section 2 TESTE-->
+    <!-- Cards Section 2 -->
     <section>
         <div class="cards container-cards">
             <div class="grid-svg-card">
@@ -229,6 +231,146 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Sessão de avaliações -->
+    <section>
+        <div class="evaluation-cards-container">
+            <div class="evaluation-card" style="width: 18rem;" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200" data-aos-easing="ease-in-out">
+                <img src="{{ asset('images/evaluations/evaluation1.jpg') }}" alt="evaluation-person" class="card-person-img">
+                <div class="card-body">
+                    <h5 class="card-title">Ana Silva</h5>
+                    <h5 class="card-title">★★★★☆</h5>
+                    <p class="card-text">
+                        O atendimento na Dent Care superou minhas expectativas. Fiquei impressionado com o profissionalismo e a atenção de toda a equipe. Recomendo fortemente!
+                    </p>
+                </div>
+            </div>
+
+            <div class="evaluation-card" style="width: 18rem;" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400" data-aos-easing="ease-in-out">
+                <img src="{{ asset('images/evaluations/evaluation2.jpg') }}" alt="evaluation-person" class="card-person-img">
+                <div class="card-body">
+                    <h5 class="card-title">Maria Oliveira</h5>
+                    <h5 class="card-title">★★★★☆</h5>
+                    <p class="card-text">
+                        A ortodontia é a especialidade odontológica que utiliza aparelhos dentários para corrigir problemas de alinhamento e mordida, melhorando tanto a funcionalidade quanto a estética do sorriso.
+                    </p>
+                </div>
+            </div>
+
+            <div class="evaluation-card" style="width: 18rem;" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="600" data-aos-easing="ease-in-out">
+                <img src="{{ asset('images/evaluations/evaluation3.jpg') }}" alt="evaluation-person" class="card-person-img">
+                <div class="card-body">
+                    <h5 class="card-title">Wanessa Stuart</h5>
+                    <h5 class="card-title">★★★★★</h5>
+                    <p class="card-text">
+                        A periodontia foca no tratamento das gengivas e estruturas de suporte dos dentes, sendo essencial para a prevenção e tratamento de doenças como gengivite e periodontite, que podem comprometer a saúde bucal.
+                    </p>
+                </div>
+            </div>
+
+            <div class="evaluation-card" style="width: 18rem;" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="800" data-aos-easing="ease-in-out">
+                <img src="{{ asset('images/evaluations/evaluation4.jpg') }}" alt="evaluation-person" class="card-person-img">
+                <div class="card-body">
+                    <h5 class="card-title">Fernando Souza</h5>
+                    <h5 class="card-title">★★★★★</h5>
+                    <p class="card-text">
+                        Os implantes dentários são uma solução moderna e eficaz para substituir dentes perdidos, proporcionando uma base estável para coroas ou próteses, com aparência e funcionalidade naturais.
+                    </p>
+                </div>
+            </div>
+
+            <div class="evaluation-card" style="width: 18rem;" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="1000" data-aos-easing="ease-in-out">
+                <img src="{{ asset('images/evaluations/evaluation5.jpg') }}" alt="evaluation-person" class="card-person-img">
+                <div class="card-body">
+                    <h5 class="card-title">Ricardo Almeida</h5>
+                    <h5 class="card-title">★★★★☆</h5>
+                    <p class="card-text">
+                        A restauração dentária é um procedimento utilizado para reparar dentes danificados ou com cáries, devolvendo-lhes a forma, a função e a estética original. É a melhor forma de evitar problemas mais graves, como infecções.
+                    </p>
+                </div>
+            </div>
+
+            <div class="evaluation-card" style="width: 18rem;" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="1200" data-aos-easing="ease-in-out">
+                <img src="{{ asset('images/evaluations/evaluation6.jpg') }}" alt="evaluation-person" class="card-person-img">
+                <div class="card-body">
+                    <h5 class="card-title">Patrícia Lima</h5>
+                    <h5 class="card-title">★★★★★</h5>
+                    <p class="card-text">
+                        O tratamento de canal é realizado para salvar um dente que sofreu uma infecção profunda, removendo a parte afetada e selando a raiz, evitando a extração e preservando a saúde bucal.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Área de Suporte -->
+    <section id="suporte">
+        <div class="container-suporte-primario">
+            <div class="container-suporte-secundario">
+                <!-- Texto acima do vídeo -->
+                <div class="suporte-texto">
+                    <h2 class="text-light">Perguntas Frequentes</h2>
+                    <p class="text-light">
+                        Na Dent Care, utilizamos apenas os melhores materiais do mercado para garantir resultados excepcionais. 
+                        Se você tem dúvidas nos contate!
+                    </p>
+                </div>
+                <div class="video-container">
+                    <video autoplay muted loop class="video">
+                        <source src="{{ asset('videos/video.mp4') }}" type="video/mp4">
+                        <source src="{{ asset('videos/video.WebM') }}" type="video/mp4">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+
+                    <a href="{{ route('suporte') }}" class="d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn btn-lg ml-lg-3 botao-fale-conosco-style">
+                            Fale conosco
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section>
+            <div class="container-rodape">
+                <footer>
+                    <div class="container py-4">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h3 class="fw-bold">Dent Care</h3>
+                                <p class="pt-2">Rua Satiro Ivo, Magano - Garanhuns, 360</p>
+                                <p class="mb-2">CEP: 01010-000</p>
+                                <p class="mb-2">Telefone: (11) 95555-5555</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h4 class="fw-bold">Menu</h4>
+                                <ul class="list-unstyled pt-2">
+                                    <li class="py-1"><a href="#" class="text-decoration-none text-light">Home</a></li>
+                                    <li class="py-1"><a href="#" class="text-decoration-none text-light">Sobre</a></li>
+                                    <li class="py-1"><a href="#" class="text-decoration-none text-light">Serviços</a></li>
+                                    <li class="py-1"><a href="#" class="text-decoration-none text-light">Trabalhe conosco</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h4 class="fw-bold">Redes</h4>
+                                <ul class="list-unstyled pt-2">
+                                    <li class="py-1"><a href="#" class="text-decoration-none text-light">Instagram</a></li>
+                                    <li class="py-1"><a href="#" class="text-decoration-none text-light">Facebook</a></li>
+                                    <li class="py-1"><a href="#" class="text-decoration-none text-light">Threads</a></li>
+                                    <li class="py-1"><a href="#" class="text-decoration-none text-light">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container text-center py-3 border-top">
+                        <p class="mb-0">&copy; 2025 Dent Care. Todos os direitos reservados.</p>
+                    </div>
+                </footer>
+            </div>
     </section>
 
     <!-- AOS Initialization -->

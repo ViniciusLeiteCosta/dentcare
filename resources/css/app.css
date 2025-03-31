@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* Estilo do barra de navegação */
 .navbar {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
@@ -13,6 +17,7 @@
 
 /* Estilo de links */
 .navbar a {
+    display: inline-block;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
@@ -157,7 +162,8 @@
 .container-cards {
     display: flex;
     width: 96%; /* Mesma largura do carrossel */
-    justify-content: center;
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha em telas menores */
+    gap: 30px; /* Espaçamento entre os cards */
     background-color: #41c1ba;
     border-radius: 30px;
     margin: 0 auto; /* Centraliza o container na página */
@@ -171,19 +177,15 @@
 }
 
 .card {
-    display: flex;
+    display: flex; 
     flex-direction: column;
     justify-content: space-between; /* Flexbox para garantir o alinhamento interno */
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    height: auto; /* Altura ajustável com base no conteúdo */
-    width: 90%; /* Largura proporcional ao container */
-    
+    height: 100%; /* Assegura que todos os cards têm a mesma altura */
     background-color: #E6F6FE;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     padding: 5%; /* Espaçamento interno proporcional */
     margin: 2% auto; /* Espaçamento externo proporcional e centralizado */
-    gap: 15px; /* Espaçamento interno entre os elementos do card */
 }
 
 .card-body {
@@ -221,13 +223,6 @@
     background-color: #41c1ba;
     border: none;
     cursor: pointer;
-}
-
-.card {
-    display: flex; 
-    flex-direction: column;
-    justify-content: space-between; /* Flexbox para garantir o alinhamento interno */
-    height: 100%; /* Assegura que todos os cards têm a mesma altura */
 }
 
 .card-img-top {
@@ -274,4 +269,120 @@
     justify-content: center;
     color: #17938d;
     text-decoration: none;
+}
+
+/* Estilo card de avaliações */
+.card-person-img {
+    height: 80px; /* Define a altura fixa do card */
+    width: 80px; /* Define a largura fixa do card para ser igual à altura */
+    border-radius: 50%; /* Torna o formato circular */
+    padding: 6px; /* Mantém o espaçamento interno */
+    margin: 10px auto; /* Mantém o espaçamento externo */
+    object-fit: cover; /* Garante que a imagem se ajuste ao container sem distorcer */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse o limite do círculo */
+}
+
+.card-person {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between; /* Flexbox para garantir o alinhamento interno */
+    background-color: #E6F6FE;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin: 2% auto; /* Espaçamento externo proporcional e centralizado */
+}
+
+.evaluation-cards-container {
+    display: flex;
+    justify-content: space-between; /* ou use center, se preferir */
+    gap: 20px; /* Espaçamento entre os cards */
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha em telas menores */
+}
+
+.evaluation-card {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;  /* Permite que os cards quebrem para a próxima linha em telas menores */
+    justify-content: space-between; /* Flexbox para garantir o alinhamento interno */
+    background-color: #E6F6FE;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin: 2% auto; 
+}
+
+/* Área de Suporte */
+
+.container-suporte-primario{
+    padding: 30px 30px 50px;
+    width: 96%; /* Mesma largura do carrossel */
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha em telas menores */
+    gap: 30px; /* Espaçamento entre os cards */
+    background-color: #41c1ba;
+    border-radius: 30px;
+    margin: 0 auto; /* Centraliza o container na página */
+}
+
+.container-suporte-secundario{
+    padding: 30px 30px 50px;
+    width: 96%; /* Mesma largura do carrossel */
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha em telas menores */
+    gap: 30px; /* Espaçamento entre os cards */
+    background-color: #365b6d73;
+    border-radius: 30px;
+    margin: 0 auto; /* Centraliza o container na página */
+}
+
+.suporte-texto {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.video {
+    width: 96%; /* Reduz a largura do carrossel para 80% */
+    height: 600px; /* Define uma altura fixa para o carrossel */
+    margin: 0 auto; /* Centraliza o carrossel na página */
+}
+
+.botao-fale-conosco-style {
+    display: inline-block;
+    background-color: #365b6d;
+    color: #ffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 30px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.botao-fale-conosco-style:hover {
+    text-decoration: none;
+
+    border: none;
+    cursor: pointer;
+    transform: scale(1.1); /* Aumenta o tamanho do botão em 10% */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.botao-fale-conosco-style::after {
+    border: none;
+    cursor: pointer;
+}
+
+.container-suporte-primario{
+    padding: 30px 30px 50px;
+    width: 96%; /* Mesma largura do carrossel */
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha em telas menores */
+    gap: 30px; /* Espaçamento entre os cards */
+    background-color: #41c1ba;
+    border-radius: 30px;
+    margin: 0 auto; /* Centraliza o container na página */
+}
+
+.container-rodape {
+    margin-top: 50px;
+    background-color: #365b6d;
+    color: #ffff;
 }
