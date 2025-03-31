@@ -28,10 +28,6 @@ O **Dent Care** tem como objetivo facilitar o acesso a profissionais da odontolo
 
 Para rodar o projeto localmente, siga os passos abaixo:
 
-# Como Rodar o Projeto
-
-Para rodar o projeto localmente, siga os passos abaixo:
-
 ```bash
 # 1. Clone o repositório
 git clone <URL_DO_REPOSITORIO>
