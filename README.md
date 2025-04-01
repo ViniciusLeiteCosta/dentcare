@@ -4,6 +4,10 @@
   <img src="https://github.com/user-attachments/assets/5b2a37e7-83f0-42eb-ae66-e150e5a6475f" width="400" alt="Dent Care Logo">
 </p>
 
+## Status do Projeto
+
+Em progresso...
+
 ## Sobre o Dent Care
 
 O **Dent Care** é um projeto desenvolvido individualmente como parte do **Desafio Connecta Tecnologia**. A proposta é criar um site responsivo voltado para serviços odontológicos, conectando pacientes a uma rede de dentistas qualificados. O projeto está sendo construído utilizando **Laravel** e **PHP**, sendo essa minha primeira experiência estruturando um sistema completo com essas tecnologias.
