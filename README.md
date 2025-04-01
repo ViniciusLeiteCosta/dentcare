@@ -54,10 +54,7 @@ npm install
     
     1) Copie o arquivo .env.example para um novo arquivo '.env':
 
-        cp .env.example .env <-- Cole isso no terminal para criar o '.env' necessário para a aplicação funcionar.
-
-        Assim que criar, abra o '.env', e remova a '#' antes de APP_KEY, pois a API está comentada.
-        Isso é necessário, caso contrário na hora de abrir a página não vai funcionar.
+    cp .env.example .env <-- Necessário para a aplicação funcionar.
 
     2) Gere a chave de aplicação no Laravel:
     php artisan key:generate
@@ -73,7 +70,7 @@ Deve aparecer algo semelhante a isto no seu terminal:
 ----------------------------------------------------
 C:\dentcare> php artisan serve
 
-   INFO  Server running on [http://127.0.0.1:8000]. <-- Segure CTRL e clique com o mouse para abrir o link no navegador 
+   INFO  Server running on [http://127.0.0.1:8000]. <-- Abra o link no navegador 
 
   Press Ctrl+C to stop the server
 ----------------------------------------------------
