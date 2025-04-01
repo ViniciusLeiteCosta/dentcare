@@ -47,7 +47,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="#">Início <span class="sr-only">(atual)</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('suporte') }}">Contato</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
                     <li class="nav-item">
@@ -128,7 +128,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Transforme seu sorriso com nossa abordagem única!</h5>
                         <p class="card-text">Na Dent Care, entendemos que cada sorriso é único. Nossa equipe de especialistas oferece uma avaliação personalizada para criar um plano de tratamento que atenda às suas necessidades específicas. Venha conhecer a melhor solução para o seu sorriso, com tecnologia de ponta e conforto garantido.</p>
-                        <a href="#" class="btn btn-lg btn-primary botao-card">Saiba mais</a>
+                        <a href="https://www.colgate.com.br/oral-health/mouth-and-teeth-anatomy/how-many-teeth-do-we-have" class="btn btn-lg btn-primary botao-card" target="_blank">Saiba mais</a>
                     </div>
                 </div>
             </div>
@@ -138,7 +138,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Inovação e tecnologia ao seu alcance!</h5>
                         <p class="card-text">Oferecemos tratamentos modernos e eficazes para cuidados bucais, desde clareamento dental até ortodontia. Nosso compromisso é proporcionar um atendimento indolor e seguro, usando as mais recentes tecnologias do mercado, para garantir a saúde e estética do seu sorriso.</p>
-                        <a href="#" class="btn btn-lg btn-primary botao-card">Saiba mais</a>
+                        <a href="https://angelus.ind.br/pt-br/blog/tecnologia-e-inovacao-na-odontologia/" class="btn btn-lg btn-primary botao-card" target="_blank">Saiba mais</a>
                     </div>
                 </div>
             </div>
@@ -148,7 +148,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Seu conforto é nossa prioridade!</h5>
                         <p class="card-text">Aqui na Dent Care, você encontra um ambiente acolhedor, projetado para proporcionar uma experiência tranquila e relaxante. Diga adeus ao medo do dentista e venha descobrir o prazer de cuidar da sua saúde bucal com profissionais que se preocupam com seu bem-estar.</p>
-                        <a href="#" class="btn btn-lg btn-primary botao-card">Saiba mais</a>
+                        <a href="https://www.odontogama.com.br/experiencia-positiva-no-dentista-dicas-para-cuidar-do-seu-sorriso-com-conforto/#:~:text=Escolha%20uma%20Clínica%20que%20Priorize%20o%20Conforto%20do%20Paciente&text=Desde%20a%20decoração%20à%20iluminação,proporcionando%20uma%20sensação%20de%20segurança." class="btn btn-lg btn-primary botao-card" target="_blank">Saiba mais</a>
                     </div>
                 </div>
             </div>
@@ -186,7 +186,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Tratamento de Clareamento Dental</h5>
                         <p class="card-text">O clareamento dental é um procedimento estético realizado para remover manchas e deixar seus dentes mais brancos e brilhantes, proporcionando um sorriso mais jovem e radiante.</p>
-                        <a href="#" class="section-2-links">Saiba mais...</a>
+                        <a href="https://drauziovarella.uol.com.br/odontologia/clareamento-dental-como-funciona-quais-os-riscos-e-quem-pode-fazer/" class="section-2-links" target="_blank">Saiba mais...</a>
                     </div>
                 </div>
                 <div class="card" style="width: 22rem;">
@@ -194,7 +194,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Ortodontia (Aparelhos Dentários)</h5>
                         <p class="card-text">A ortodontia é a especialidade odontológica que utiliza aparelhos dentários para corrigir problemas de alinhamento e mordida, melhorando tanto a funcionalidade quanto a estética do sorriso.</p>
-                        <a href="#" class="section-2-links">Saiba mais...</a>
+                        <a href="https://www.implart.com.br/ortodontia/" class="section-2-links" target="_blank">Saiba mais...</a>
                     </div>
                 </div>
                 <div class="card h-100" style="width: 22rem;">
@@ -202,7 +202,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Periodontia (Tratamento de Gengiva)</h5>
                         <p class="card-text">A periodontia foca no tratamento das gengivas e estruturas de suporte dos dentes, sendo essencial para a prevenção e tratamento de doenças como gengivite e periodontite, que podem comprometer a saúde bucal.</p>
-                        <a href="#" class="section-2-links">Saiba mais...</a>
+                        <a href="https://blog.odontoclinic.com.br/periodontia/tudo-sobre-periodontia/" class="section-2-links" target="_blank">Saiba mais...</a>
                     </div>
                 </div>
                 <div class="card h-100" style="width: 22rem;">
@@ -210,7 +210,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Implantes Dentários</h5>
                         <p class="card-text">Os implantes dentários são uma solução moderna e eficaz para substituir dentes perdidos, proporcionando uma base estável para coroas ou próteses, com aparência e funcionalidade naturais.</p>
-                        <a href="#" class="section-2-links">Saiba mais...</a>
+                        <a href="https://www.saudebemestar.pt/pt/medicina/dentaria/implante-dentario/" class="section-2-links" target="_blank">Saiba mais...</a>
                     </div>
                 </div>
                 <div class="card" style="width: 22rem;">
@@ -218,7 +218,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Restauração Dentária</h5>
                         <p class="card-text">A restauração dentária é um procedimento utilizado para reparar dentes danificados ou com cáries, devolvendo-lhes a forma, a função e a estética original. É a melhor forma de evitar problemas mais graves, como infecções.</p>
-                        <a href="#" class="section-2-links">Saiba mais...</a>
+                        <a href="https://blog.odontoclinic.com.br/seu-sorriso/restauracao-dentaria/" class="section-2-links" target="_blank">Saiba mais...</a>
                     </div>
                 </div>
                 <div class="card h-100" style="width: 22rem;">
@@ -226,7 +226,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Tratamento de Canal (Endodontia)</h5>
                         <p class="card-text">O tratamento de canal é realizado para salvar um dente que sofreu uma infecção profunda, removendo a parte afetada e selando a raiz, evitando a extração e preservando a saúde bucal.</p>
-                        <a href="#" class="section-2-links">Saiba mais...</a>
+                        <a href="https://drauziovarella.uol.com.br/odontologia/o-que-e-o-canal-dentario-e-como-ele-e-tratado/" class="section-2-links" target="_blank">Saiba mais...</a>
                     </div>
                 </div>
             </div>
