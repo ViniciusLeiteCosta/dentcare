@@ -30,7 +30,8 @@ O **Dent Care** tem como objetivo facilitar o acesso a profissionais da odontolo
 
 ## Como Rodar o Projeto
 
-Para rodar o projeto localmente, siga os passos abaixo:
+Para rodar o projeto localmente no Windows, siga os passos.
+Obs: Se estiver no Linux, leia os passos ao final deste Readme!
 
 ```bash
 # 1. Clone o repositório
@@ -85,4 +86,56 @@ Caso o 'npm run dev' não funcione por algum motivo, você pode tentar rodar 'np
 
 Certifique-se de que tem o Node.js e o npm corretamente instalados.
 
-Se a pessoa não tiver o PHP, Composer ou Node.js instalados corretamente, o processo de instalação pode falhar.
+Se a pessoa não tiver o PHP, Composer ou Node.js instalados corretamente, o processo de instalação pode falhar.]
+
+## Como Rodar o Projeto no LINUX
+
+1) Instale as dependências do sistema
+
+sudo apt update
+sudo apt install php php-cli php-mbstring php-xml php-bcmath unzip curl
+
+    Caso não possua o Composer, será necessário instalar:
+
+        curl -sS https://getcomposer.org/installer | php
+        sudo mv composer.phar /usr/local/bin/composer
+
+2) Clone o repositório
+
+git clone
+
+3) Instale as dependências do Composer
+
+    Se já houver 'composer.lock', primeira remova ele pois pode gerar incompatibilidades,
+    e além disso, instale os pacotes:
+    
+    rm -rf vendor/ composer.lock
+    composer install --ignore-platform-reqs
+
+4) Configure a aplicação gerando o '.env'
+
+cp .env.example .env
+
+5) Gere a chave da aplicação
+
+php artisan key:generate
+
+    Se necessário, também corrija problemas de permissões e rode
+    migrações e seeders:
+
+    chmod -R 777 storage bootstrap/cache
+    php artisan migrate --seed
+
+6) Inicie o servidor local
+
+php artisan serve
+
+Deve aparecer algo semelhante a isto no seu terminal:
+
+----------------------------------------------------
+C:\dentcare> php artisan serve
+
+   INFO  Server running on [http://127.0.0.1:8000]. <-- Abra o link no navegador 
+
+  Press Ctrl+C to stop the server
+----------------------------------------------------
