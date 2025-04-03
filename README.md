@@ -72,23 +72,15 @@ php artisan serve
 
 Deve aparecer algo semelhante a isto no seu terminal:
 
-----------------------------------------------------
+--------------------------------------------------------------------------------------------------------
 C:\dentcare> php artisan serve
 
    INFO  Server running on [http://127.0.0.1:8000]. <-- Abra o link no navegador 
 
   Press Ctrl+C to stop the server
-----------------------------------------------------
+--------------------------------------------------------------------------------------------------------
 
-Notas adicionais:
-
-Caso o 'npm run dev' não funcione por algum motivo, você pode tentar rodar 'npm run build' para compilar os assets.
-
-Certifique-se de que tem o Node.js e o npm corretamente instalados.
-
-Se a pessoa não tiver o PHP, Composer ou Node.js instalados corretamente, o processo de instalação pode falhar.]
-
-## Como Rodar o Projeto no LINUX
+🐧 Como Rodar o Projeto no LINUX 🐧
 
 1) Instale as dependências do sistema
 
@@ -132,10 +124,18 @@ php artisan serve
 
 Deve aparecer algo semelhante a isto no seu terminal:
 
-----------------------------------------------------
+--------------------------------------------------------------------------------------------------------
 C:\dentcare> php artisan serve
 
    INFO  Server running on [http://127.0.0.1:8000]. <-- Abra o link no navegador 
 
   Press Ctrl+C to stop the server
-----------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+
+Notas adicionais:
+
+Caso o 'npm run dev' não funcione por algum motivo, você pode tentar rodar 'npm run build' para compilar os assets.
+
+Certifique-se de que tem o Node.js e o npm corretamente instalados.
+
+Se a pessoa não tiver o PHP, Composer ou Node.js instalados corretamente, o processo de instalação pode falhar.
